@@ -4,6 +4,8 @@ on:
   push:
     branches: 
       - master
+  schedule:
+    - cron: "17 3 */9 * *"
       
 env:
   IMAGE_NAME: arch-r
