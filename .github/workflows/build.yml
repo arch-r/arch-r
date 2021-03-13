@@ -6,6 +6,7 @@ on:
       - master
   schedule:
     - cron: "17 3 */9 * *"
+  workflow_dispatch:
       
 env:
   IMAGE_NAME: arch-r
