@@ -1,4 +1,4 @@
-FROM archlinux/base:latest
+FROM archlinux:latest
 
 RUN pacman -Syu --noconfirm base-devel r gcc-fortran git libgit2 texlive-core && pacman -Scc --noconfirm
 
