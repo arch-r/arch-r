@@ -1,6 +1,6 @@
 FROM archlinux:latest
 
-RUN pacman -Syu --noconfirm base-devel r gcc-fortran git libgit2 texlive-core texlive-latex texlive-latexrecommended && pacman -Scc --noconfirm
+RUN pacman -Syu --noconfirm base-devel r gcc-fortran git libgit2 texlive && pacman -Scc --noconfirm
 
 COPY add_inconsolata.sh add_inconsolata.sh
 RUN bash add_inconsolata.sh
