@@ -1,6 +1,6 @@
 FROM archlinux:latest
 
-RUN pacman -Syu --noconfirm base-devel r gcc-fortran git libgit2 texlive biber && pacman -Scc --noconfirm
+RUN pacman -Syu --noconfirm base-devel r gcc-fortran git libgit2 texlive biber qpdf && pacman -Scc --noconfirm
 
 COPY build_devel.sh build_devel.sh
 RUN bash build_devel.sh
