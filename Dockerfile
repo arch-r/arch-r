@@ -7,4 +7,4 @@ RUN bash build_devel.sh
 
 RUN R -e "install.packages(c('devtools','roxygen2','xml2','covr','tinytest'),repos='https://cloud.r-project.org')"
 
-RUN RD -e "install.packages(c('devtools','roxygen2','xml2','covr','tinytest'),repos='https://cloud.r-project.org')"
+RUN RD -e "install.packages(c('testthat','tinytest'),repos='https://cloud.r-project.org')"
